@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------
+NAVIGATION
+----------- */
+
+nav {
+    padding: 0 18%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav li {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+
+nav a {
+    width: 100%;
+    text-decoration: none;
+    padding: 18% 5%;
+    color: #004643;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background-color: #004643;
+    color: white;
+}
+
+/* ----------
+HOME HEADER 
+------------*/
+
+header {
+    width: 100%;
+    /* height: 60vh; */
+    position: relative;
+    overflow: hidden;
+}
+
+.top-header {
+    height: 45vh;
+}
+
+.top-header video {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    object-fit: cover;
+}
+
+.top-title {
+    position: absolute;
+    top: 36%;
+    left: 35%;
+    text-align: center;
+    z-index: 3;
+}
+
+.top-header h1 {
+    font-size: 48px;
+    color: white;
+}
+
+
+/* ----------
+ANIMALS HEADER 
+------------*/
+.top-header img {
+    width: 100%;
+}
+
+/* ----------
+TICKETS HEADER 
+------------*/
+.tickets {
+    background-color: #004643;
+}
+
+/* ----------
+CONTACT HEADER 
+------------*/
+.contact {
+    border: 1px solid black;
+}
+
+.contact h1 {
+    color: #001e1d;
+}
+
+
+/* ----------
+HOME MAIN 
+------------*/
+
+.home {
+    padding: 5% 10%;
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 5%;
+}
+
+.left-section {
+    width: 70%;
+}
+
+.left-section h2 {
+    font-size: 32px;
+    color: #001e1d;
+    border-bottom: 4px solid #004643;
+    margin-bottom: 5%;
+    padding-left: 2%;
+}
+
+.left-section article {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.left-section aside {
+    background-color: #abd1c6;
+    border-radius: 8px;
+    padding: 4% 6%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.left-section h4 {
+    font-size: 20px;
+}
+
+.right-section {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.right-section h2 {
+    font-size: 32px;
+    color: #001e1d;
+    border-bottom: 4px solid #004643;
+    margin-bottom: 6%;
+    padding-left: 2%;
+}
+
+.top-article aside {
+    padding: 3% 5%;
+}
+
+.top-article a {
+    color: #004643;
+}
+
+.middle-article aside {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.middle-article figure {
+    width: 45%;
+    padding-top: 5%;
+}
+
+.middle-article img {
+    width: 98%;
+    height: 12vh;
+}
+
+.middle-article figcaption {
+    text-align: center;
+}
+
+.bottom-article ul {
+    padding-left: 10%;
+}
+
+.bottom-article li {
+    padding: 2%;
+}
+
+.bottom-article a {
+    text-decoration: none;
+    color: #004643;
+    font-weight: bold;
+}
+
+.bottom-article a:hover {
+    text-decoration: underline;
+}
+
+/* ----------
+ANIMALS MAIN 
+------------*/
+.animals {
+    margin-top: 3%;
+    padding: 2% 10%;
+}
+
+.animals:first-child {
+    margin-top: 6%;
+}
+
+.animals h2 {
+    font-size: 24px;
+    background-color: #abd1c6;
+    text-align: center;
+    padding: 1.5% 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 1.1%;
+}
+
+.animal-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    row-gap: 30px;
+    column-gap: 12px;
+}
+
+figure {
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+.animal-section img {
+    width: 100%;
+    height: 24vh;
+}
+
+/*-------------
+  TICKETS MAIN
+ -------------*/
+.ticket {
+    margin-top: 5%;
+    text-align: center;
+
+}
+
+table {
+    padding: 3% 20%;
+    width: 100%;
+}
+
+table caption {
+    font-size: 24px;
+}
+
+tr, td, th {
+    border: 1px solid #001e1d;
+
+}
+
+th, td {
+    padding: 2%;
+}
+
+th {
+    background-color: #004643;
+    color: white;
+    width: 32%;
+}
+
+tr:nth-child(even) td {
+    background: #abd1c6;
+}
+
+/*-----------
+  CONTACT MAIN
+ ------------*/
+.contact-form {
+    padding: 8% 28% 5% 28%;
+}
+
+.contact-form h2 {
+    text-align: center;
+    font-size: 32px;
+    padding-bottom: 15%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+form div {
+    display: flex;
+    justify-content: space-around;
+}
+
+form label {
+    width: 50%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="number"] {
+    padding: 1%;
+    width: 45%;
+}
+
+input[type="radio"]{
+ width: 6%;
+}
+
+select {
+    width: 47%;
+    padding: 1%;
+}
+
+textarea {
+    width: 46%;
+    height: 12vh;
+    padding: 1%;
+}
+
+.button {
+    justify-content: space-around;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    margin-top: 6%;
+    width: 22%;
+    height: 6vh;
+    font-size: 20px;
+    background-color: #004643;
+    color: white;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #abd1c6;
+    color: #001e1d;
+    border: none;
+}
+
+/*-----------
+  FOOTER
+ ------------*/
+
+footer {
+    padding: 3%;
+    color: #004643;
+    text-align: center;
+}
